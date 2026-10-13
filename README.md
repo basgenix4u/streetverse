@@ -1,5 +1,7 @@
 # STREETVERSE
 
+**Live:** https://streetverse-devs-projects-deb15629.vercel.app · **Repo:** https://github.com/basgenix4u/streetverse (public)
+
 A Lagos street-life game. Explore a 3D city at golden hour, run courier shifts through traffic, earn fictional naira, and build your story — all in the browser.
 
 **This is a game.** All money is fictional naira. No real-money purchases, no cash-out.
