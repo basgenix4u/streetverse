@@ -49,11 +49,9 @@ The game is tuned to stay smooth at 60fps on desktop **and** mobile:
 - **Compressed responses** — `compress: true` in `next.config.ts`.
 - **Security headers** — HSTS, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy` on every route.
 
-## Without a database
+## Database
 
-The app is fully playable with no `DATABASE_URL` — progress lives in the browser. `/api/health` then responds `{"ok":false}` (HTTP 500) and the import layer never throws, so the game keeps serving.
-
-To enable the database on Vercel: **Storage → Create Database → Postgres**, then set `DATABASE_URL` to the non-pooling connection string (`POSTGRES_URL_NON_POOLING`).
+Production runs on Neon Postgres (`DATABASE_URL` set on Vercel), so `/api/health` reports `{"ok":true}`. The app is fully playable with no `DATABASE_URL` — progress lives in the browser and the import layer never throws, so the game keeps serving if the database is unreachable.
 
 ## License
 
